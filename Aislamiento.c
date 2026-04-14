@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <omp.h>
-
+/*Esto puede petar dependiendo del pc y el compilador que uses*/
+/*Despues de clases lo tendre que mirar a detalle el codigo el finde*/
 #ifdef _WIN32
-#include <windows.h>
+#include <windows.h> 
 static double now_ms(void){
 	LARGE_INTEGER freq,count;
 	QueryPerformanceFrequency(&freq);
